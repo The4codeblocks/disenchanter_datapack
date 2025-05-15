@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_frame] if items entity @s contents *[minecraft:enchantments] if data entity @s ItemRotation at @s positioned ^ ^ ^-0.5 if block ~ ~ ~ minecraft:grindstone positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:lectern[has_book=true] run function disenchanter:disenchant
